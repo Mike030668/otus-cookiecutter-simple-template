@@ -1,0 +1,1 @@
+# OTUS Cookiecutter Simple Template
