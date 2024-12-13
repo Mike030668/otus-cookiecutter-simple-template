@@ -17,7 +17,7 @@
 git clone git@github.com:NickOsipov/otus-cookiecutter-simple-template.git
 ```
 
-1. Установите cookiecutter:
+1. Установите библиотеку `cookiecutter` в виртуальном окружении:
 
 ```bash
 python3 -m venv .venv
