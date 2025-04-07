@@ -28,7 +28,7 @@ pip install cookiecutter
 2. Создайте проект:
 ```bash
 # сначала перейдите в нужную директорию
-cookiecutter https://github.com/NickOsipov/otus-cookiecutter-template
+cookiecutter https://github.com/NickOsipov/otus-cookiecutter-simple-template
 ```
 
 ## Лицензия
