@@ -1,0 +1,72 @@
+# fail_fast: true
+
+# repos:
+#   - repo: local
+#     hooks:
+#       - &default_hook
+#         id: default
+#         name: default
+#         entry: python -c "print('No entry for default hook')"
+#         files: &files ^(src|tests|config)/
+#         args: &paths_list
+#           - src
+#           - tests
+#           - config
+#         language: system
+#         types: [python]
+#         pass_filenames: false
+#         stages: [commit]
+
+#       - <<: *default_hook
+#         id: isort
+#         name: isort
+#         entry: isort
+#         args: *paths_list
+
+#       - <<: *default_hook
+#         id: black
+#         name: black
+#         entry: black
+#         args: *paths_list
+
+#       - <<: *default_hook
+#         id: mypy
+#         name: mypy
+#         entry: mypy
+#         args: *paths_list
+
+#       - <<: *default_hook
+#         id: flake8
+#         name: flake8
+#         entry: flake8
+#         args: *paths_list
+
+#       - <<: *default_hook
+#         id: ruff
+#         name: ruff
+#         entry: ruff check
+#         args: *paths_list
+
+#       - <<: *default_hook
+#         id: pylint
+#         name: pylint
+#         entry: pylint
+#         args: *paths_list
+
+#       - id: gitlint
+#         name: gitlint
+#         entry: gitlint
+#         language: system
+#         stages: [commit-msg]
+#         always_run: true
+#         args:
+#           - --msg-filename
+
+#       - id: commit-message-lint
+#         name: commit-message-lint
+#         entry: python -m src.utils.commit_lint
+#         language: system
+#         stages: [commit-msg]
+#         always_run: true
+#         args:
+#           - check commit message
