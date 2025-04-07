@@ -52,11 +52,3 @@
 #         entry: pylint
 #         args: *paths_list
 
-#       - id: gitlint
-#         name: gitlint
-#         entry: gitlint
-#         language: system
-#         stages: [commit-msg]
-#         always_run: true
-#         args:
-#           - --msg-filename
