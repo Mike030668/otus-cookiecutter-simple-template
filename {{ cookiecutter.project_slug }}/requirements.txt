@@ -6,8 +6,9 @@ loguru
 # linters
 isort
 black
-flake8
+ruff
 pylint
+pre-commit
 # dev
 ipykernel
 seaborn
