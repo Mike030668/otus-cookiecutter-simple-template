@@ -14,7 +14,7 @@
 #         language: system
 #         types: [python]
 #         pass_filenames: false
-#         stages: [commit]
+#         stages: [pre-commit]
 
 #       - <<: *default_hook
 #         id: isort
