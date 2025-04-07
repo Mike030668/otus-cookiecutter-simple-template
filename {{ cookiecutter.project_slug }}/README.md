@@ -10,8 +10,8 @@ Setup Instructions
     ```
 2. Create a project:
     ```bash
-    uv init
     uv python pin 3.11.11
+    uv init
     uv venv
     uv add --requirements requirements.txt
     ```
