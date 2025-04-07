@@ -7,11 +7,10 @@
 #         id: default
 #         name: default
 #         entry: python -c "print('No entry for default hook')"
-#         files: &files ^(src|tests|config)/
+#         files: &files ^(src|tests)/
 #         args: &paths_list
 #           - src
 #           - tests
-#           - config
 #         language: system
 #         types: [python]
 #         pass_filenames: false
@@ -61,12 +60,3 @@
 #         always_run: true
 #         args:
 #           - --msg-filename
-
-#       - id: commit-message-lint
-#         name: commit-message-lint
-#         entry: python -m src.utils.commit_lint
-#         language: system
-#         stages: [commit-msg]
-#         always_run: true
-#         args:
-#           - check commit message
