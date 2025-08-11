@@ -29,6 +29,14 @@ pip install cookiecutter
 ```bash
 # сначала перейдите в нужную директорию
 cookiecutter https://github.com/NickOsipov/otus-cookiecutter-simple-template
+
+cookiecutter-data-scienc https://cookiecutter-data-science.drivendata.org/
+
+
+version_2  https://github.com/drivendataorg/cookiecutter-data-science
+
+```bash
+pip install cookiecutter-data-science
 ```
 
 ## Лицензия
